@@ -1,0 +1,106 @@
+body {
+  background: url("../img/bg.jpg") no-repeat center top;
+}
+
+.fudiv::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+header {
+  width: 1120px;
+  height: 70px;
+  margin: 0 auto;
+  background-color: #008c8c;
+  margin-top: 45px;
+  background: url("../img/bg_nav.jpg") no-repeat 0 0/100% 100%;
+}
+
+header nav {
+  line-height: 70px;
+}
+
+header nav .logo {
+  position: relative;
+}
+
+header nav img {
+  height: 150px;
+  float: left;
+  position: absolute;
+  left: -35px;
+  top: -45px;
+}
+
+header nav a {
+  color: #f8b700;
+  float: left;
+  font-size: 16px;
+  width: 160px;
+  height: 70px;
+  box-sizing: border-box;
+  border-right: 1px solid #3f2a22;
+  text-align: center;
+  font-weight: bold;
+  font-family: "微软雅黑";
+}
+
+header nav a:hover {
+  color: azure;
+}
+
+.title {
+  width: 648px;
+  height: 670px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.title .time {
+  position: absolute;
+  top: 470px;
+}
+
+.title .time:hover {
+  cursor: pointer;
+}
+
+.content {
+  width: 1120px;
+  margin: 0 auto;
+}
+
+.content .block {
+  float: left;
+  margin-right: 15px;
+  width: 265px;
+  outline: 2px solid #3f2a22;
+  padding-bottom: -100px;
+}
+
+.content .block:last-child {
+  margin-right: 0px;
+}
+
+.content .block h2 {
+  color: #f8b700;
+  background-color: #211510;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-bottom: 2px solid #3f2a22;
+}
+
+.content .block:hover h2 {
+  background-color: #434343;
+}
+
+.content .block img {
+  width: 265px;
+  height: 138px;
+  margin-bottom: -3px;
+  cursor: pointer;
+}

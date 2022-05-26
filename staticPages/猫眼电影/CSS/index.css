@@ -1,0 +1,278 @@
+html{
+    min-width: 1540px;
+}
+.header-style{
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+/* 全部网页占窗口80% */
+.style-all{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* 头部/logo/首页等等 */
+header{
+    height: 80px;
+    line-height: 80px;
+}
+
+.logo a{
+    height: 20px;
+    padding-top: 20px;
+    display: block;
+    float: left;
+}
+
+.logo a img{
+    display: block;
+}
+
+.header-title div{
+    float: left;
+
+}
+.style-all .header-title .seat{
+    margin: 0 10px;
+    width: 68.45px;
+    height: 80px;
+    text-align: center;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+
+.style-all .header-title .seat a{
+    font-size: 15px;
+    color: #333;
+}
+
+.style-all .header-title .seat:hover{
+    border-left: 1px solid #d8d8d8;
+    border-right: 1px solid #d8d8d8;
+}
+
+.style-all .header-title .title{
+    width: 66px;
+    height: 80px;
+    text-align: center;
+}
+
+.style-all .header-title .title a{
+    line-height: 80px;
+    font-size: 18px;
+    color: #333;
+}
+
+.style-all .header-title .title a[href*="#"]:hover{
+    color: red;
+}
+
+.style-all .header-title .title-play a:hover{
+    color: red;
+}
+
+.style-all .header-title .index{
+    background-color: #ef4238;
+}
+
+.style-all .header-title .index a{
+    color: #fff;
+}
+
+.style-all .header-title .title-play,.title-download_app{
+    width: 66px;
+    height: 80px;
+    text-align: center;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+
+.style-all .header-title .title-download_app{
+    width: 114px;
+}
+
+.style-all .header-title .title-play a{
+    line-height: 80px;
+    font-size: 18px;
+    color: #333;
+}
+
+.style-all .header-title .title-play,.title-download_app a{
+    line-height: 80px;
+    font-size: 18px;
+    color: #333;
+}
+
+.style-all .header-title .title-play:hover{
+    border-left: 1px solid #d8d8d8;
+    border-right: 1px solid #d8d8d8;
+}
+.style-all .header-title .title-download_app:hover{
+    border-left: 1px solid #d8d8d8;
+    border-right: 1px solid #d8d8d8;
+}
+
+.style-all .header-title .title-search{
+    width: 220px;
+    height: 45px;
+    margin: 15px 10px 0 0;
+}
+
+.style-all .header-title .title-search img{
+    width: 220px;
+}
+
+.style-all .header-title .user{
+    width: 58px;
+    height: 65px;
+    padding-top: 13px;
+    padding-left: 20px;
+    border: 1px solid transparent;
+}
+
+.style-all .header-title .user:hover{
+    border-left: 1px solid #d8d8d8;
+    border-right: 1px solid #d8d8d8;
+}
+
+.style-all .header-title .user img{
+    width: 40px;
+    opacity: 1;
+}
+
+/* 高度塌陷 */
+.fudiv::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* 文章主体 */
+.content-style{
+    margin-top: 62px;
+}
+
+/* .content-style .main-style{
+    background-color: #f0f0f0;
+    height: 900px;
+} */
+
+/* 主体两部分 */
+.style-all .main-style .content-left{
+    float: left;
+    width: 60%;
+}
+
+.style-all .main-style .content-left  .article-head{
+    margin: 0 0 25px 0;
+}
+
+.style-all .main-style .content-left  .article-head h2{
+    font-size: 26px;
+    color: #EF4238;
+    float: left;
+}
+
+.style-all .main-style .content-left  .article-head p{
+    font-size: 14px;
+    line-height: 1;
+    padding-top: 10px;
+    color: #F04E45;
+    float: right;
+}
+
+.style-all .main-style .content-left .article-movie div{
+    float: left;
+    margin-right: 31px;
+    width: 160px;
+    height: 259px;
+    background-image: url(../img/movie-none.png);
+    background-size:160px 259px;
+}
+
+.style-all .main-style .content-left .article-movie div:hover{
+    background-image: url(../img/movie.png);
+}
+
+.style-all .main-style .content-left .article-movie div img{
+    width: 160px;
+}
+
+.style-all .main-style .content-left .article-movie .movie-4{
+    margin: 0;
+}
+.style-all .main-style .content-left .article-movie-botton{
+    float: left;
+    margin-top: 38px;
+}
+
+.style-all .main-style .content-left .article-movie-botton div{
+    float: left;
+}
+
+/* 文章右侧今日票房 */
+.style-all .main-style .content-right{
+    float: right;
+    width: 35%;
+    height: 900px;
+    /* background-color: #008c8c; */
+}
+
+.style-all .main-style .content-right .right-h2{
+    float: left;
+}
+
+.style-all .main-style .content-right h2{
+    font-size: 26px;
+    font-weight: 400;
+    color: #EF4238;
+}
+
+.style-all .main-style .right-article .article-img{
+    width: 358px;
+    height: 78px;
+    background-image: url(../img/right-one.png);
+    background-size: 358px 78px;
+    float: left;
+    margin-top: 23px;
+    margin-bottom: 11px;
+    border: 1px solid #fff;
+}
+
+.style-all .main-style .right-article .article-img2{
+    width: 360px;
+    height: 55px;
+    background-image: url(../img/right-two.png);
+    opacity: 0.5;
+    background-size: 360px 55px;
+    float: left;
+    margin-bottom: 11px;
+    border: 1px solid #fff;
+}
+
+.style-all .main-style .right-article .article-img3{
+    width: 343px;
+    height: 103px;
+    background-image: url(../img/right-three.png);
+    opacity: 0.9;
+    background-size: 360px 103px;
+    float: left;
+    margin: 29px auto;
+    border: 1px solid #fff;
+}
+
+.style-all .main-style .right-article .article-img:hover{
+    background-image: url(../img/right-one-hov.png);
+}
+
+.style-all .main-style .right-article .article-img2:hover{
+    background-image: url(../img/right-two.png);
+    opacity: 1;
+}
+
+.style-all .main-style .right-article .article-img3:hover{
+    background-image: url(../img/right-three-hov.png);
+    opacity: 1;
+}

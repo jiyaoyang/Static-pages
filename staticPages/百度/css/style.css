@@ -1,0 +1,200 @@
+/* 头部样式 */
+header{
+    width: 99%;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+}
+.header-style{
+    margin:0;
+    padding: 0 0 0 16px;
+    width: 100%;
+    height: 60px;
+}
+
+/* 头部中左方新闻连接的样式 */
+.header-left{
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+.header-left a{
+    float: left;
+    list-style: none;
+    margin:14px 24px 0 0;
+    padding: 0;
+    color: #222;
+    text-decoration: none;
+}
+.header-left li:hover{color: blue;}
+
+/* 头部右方的登录注册样式 */
+.header-right{
+    float: right;
+    margin: 0;
+    padding: 0 10px 0 200px;
+    text-align: center;
+}
+.header-right div{float: left;}
+.header-right div a{text-decoration: none;}
+.set{margin: 13.5px 18.5px 0 13px;}
+.header-right div p{
+    margin: 0;
+    padding: 0;
+}
+.use{
+    width: 48px;
+    height: 24px;
+    line-height: 24px;
+    background-color: #4e6ef2;
+    font-weight: 400;
+    border-radius: 6px;
+    text-align: center;
+    margin: 10px 6.5px 0 13px;
+}
+.use a{color: #fff;}
+.set p:hover{color: blue;}
+.use:hover{background-color: blue;}
+/* logo样式 */
+.img-style{
+    height: 60%;
+    min-height: 185px;
+    max-height: 310px;
+    position: relative;
+    z-index: 0;
+    text-align: center;
+}
+.img-style img{
+    width: 270px;
+    height: 129px;
+}
+
+/* 输入框样式 */
+.input-style{
+    text-align: center;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+}
+.input-text{
+    float: left;
+    margin-left: 32.5%;
+
+}
+.input-buthz{
+    float: right;
+    z-index: 4;
+    margin-right: 27.7%;
+    padding: 4px 13px 0 0;
+}
+.input-1{
+    width: 443px;
+    padding-right: 87px;
+    height: 16px;
+    padding: 12px 16px;
+    font-size: 10px;
+    border-radius: 10px 0 0 10px;
+    border: 2px solid #c4c7ce;
+    border-right: 0px;
+    background-color: #fff;
+    color: #222;
+}
+.input-btn{
+    width: 108px;
+    height: 44px;
+    line-height: 45px;
+    padding: 0;
+    background: 0 0;
+    background-color: #4e6ef2;
+    border-radius: 0 10px 10px 0;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+}
+.input-1:hover{border: 2xp solid red;}
+.input-btn:hover{background-color:blue;}
+
+/* 百度热搜样式 */
+.rb-style{
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    text-decoration: none;
+}
+.rb-rs{
+    float: left;
+    margin-left: 32.4%;
+    color: #222222;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+}
+.rb-zhuanyi{
+    font-size: 19px;
+    color: rgb(128, 128, 128);
+    float: left;
+    margin: 0;
+    padding: 0.8% 0 0 0;
+}
+.rb-hyh{
+    float: right;
+    text-decoration: none;
+    margin-left: 23%;
+}
+.rb-left{
+    margin: 0 0 0 32%;
+    float: left;
+    text-align: left;
+    font-size: 16px;
+    line-height: 28px;
+}
+.rb-right{
+    margin: 0% 23% 0% 0%;
+    float: right;
+    font-size: 16px;
+    line-height: 28px;
+}
+.rb-left a,.rb-right a{
+    color: #222;
+}
+.rb-left a{text-decoration: none;}
+.rb-right a{text-decoration: none;}
+.rb-rs:hover{color: blue;}
+.rb-hyh:hover{color: blue;}
+.rb-style a:hover{color: blue;text-decoration: underline;}
+
+/* 页脚样式 */
+footer{
+    position: fixed;
+    bottom:0px; left:0px;
+    text-align: center;
+    width: 100%;
+    height: 39px;
+    background-color: #fff;
+}
+footer ul{
+    margin: 0;
+    height: 49px;
+    line-height: 39px;
+    text-align: center;
+    padding: 0 0 0 7%;
+}
+footer ul li{
+    line-height: 39px;
+    text-align: center;
+    float: left;
+    list-style: none;
+    font-size: 12px;
+    color: #bbb;
+    font-family: Arial,sans-serif;
+    margin-right: 20px;
+}
+footer img{
+    width: 49px;
+    height: 20px;
+    float: left;
+    margin-top: 8.7px;
+}
+footer ul li:hover{
+    color: black;
+}
