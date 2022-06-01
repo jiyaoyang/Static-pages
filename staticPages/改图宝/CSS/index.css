@@ -1,0 +1,285 @@
+body {
+  background-color: #efefef;
+  min-width: 1436px;
+  max-width: 1536px;
+  min-height: 337px;
+}
+
+.fudiv::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.nav {
+  height: 63px;
+  box-sizing: border-box;
+  background-color: white;
+  padding: 0 70px;
+  line-height: 63px;
+  border: 1px solid #ddd;
+  position: relative;
+}
+
+.nav .logo {
+  width: 104px;
+  height: 32px;
+  float: left;
+  padding: 10px 0;
+}
+
+.nav .menu {
+  width: 960px;
+  height: 62px;
+  margin: 0 auto;
+}
+
+.nav .menu .menu-ul .item,
+.nav .nav-right .language a,
+.nav .nav-right .Log a {
+  height: 63px;
+  padding: 0 10px;
+  float: left;
+  color: #333;
+  font-size: 13px;
+  font-family: -apple-system, Segoe UI, SegoeUI, Microsoft YaHei,
+    Microsoft JhengHei, PingFang SC, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.nav .menu .menu-ul .item:nth-child(1) {
+  margin: 0;
+  border-left: 2px solid #eee;
+  border-right: 2px solid #eee;
+  padding: 0 25px;
+}
+
+.nav .menu .menu-ul .item:hover,
+.nav .nav-right .language:hover,
+.nav .nav-right .Log:hover {
+  border-bottom: 4px solid red;
+}
+
+.nav .nav-right {
+  position: absolute;
+  right: 70px;
+  top: 0px;
+}
+
+.nav .nav-right .language,
+.nav .nav-right .Log {
+  float: left;
+  padding: 0 5px;
+  margin-left: 5px;
+  height: 63px;
+  line-height: 63px;
+  box-sizing: border-box;
+}
+
+.nav .menu .menu-ul .itemSdy:hover .sdyMenu {
+  display: block;
+}
+
+/* 二级菜单 */
+.nav .menu .menu-ul .item .sdyMenu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  left: 0;
+  top: 63px;
+}
+
+.nav .menu .menu-ul .item .sdyMenu .list {
+  float: left;
+  padding: 10px 0;
+  line-height: 2.5em;
+  width: 220px;
+  margin-right: 5px;
+}
+
+.nav .menu .menu-ul .item .sdyMenu .list ul li:hover {
+  background-color: rgba(239, 239, 239);
+}
+
+.nav .menu .menu-ul .item .sdyMenu .list:nth-child(1) {
+  margin-left: 18.6%;
+  margin-left: 285px;
+  border-left: 2px solid #eee;
+  box-sizing: border-box;
+}
+
+.nav .menu .menu-ul .item .sdyMenu .list:nth-child(4) {
+  margin: 0;
+  box-sizing: border-box;
+  border-right: 2px solid #eee;
+  height: 248px;
+}
+
+/* 内容主体 */
+.content {
+  margin: 40px auto;
+  width: 1380px;
+  text-align: center;
+}
+
+.content .title-h2 {
+  margin-bottom: 50px;
+}
+
+.content .title-h2 h2 {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.content .enterImg {
+  margin-bottom: 65px;
+}
+
+.content .enterImg .opt {
+  border: 1px solid #28a745;
+  background-color: #28a745;
+  color: white;
+  width: 202px;
+  height: 45px;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: inherit;
+  border-radius: 4px;
+}
+
+.content .enterImg .opt:hover {
+  color: #fff;
+  background-color: #218838;
+  border-color: #1e7e34;
+  cursor: pointer;
+}
+
+.content .describe {
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 0.875rem;
+}
+
+.content .describe p {
+  margin-bottom: 14px;
+}
+
+.content .describe p a {
+  color: #337ab7;
+  text-decoration: underline;
+}
+
+.content .describe p a:hover {
+  color: #23527c;
+}
+
+.content .adv {
+  position: relative;
+  width: 420px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.content .adv .advertise {
+  background: url("../img/advertise.png");
+  width: 420px;
+  height: 300px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.content .adv .Anchor {
+  width: 120px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.content .adv .Anchor:hover {
+  background: url("../img/advertise-hover.png") no-repeat;
+  background-size: 100px 20px;
+  position: absolute;
+  top: 0;
+  right: -20px;
+  z-index: 1;
+}
+
+.content .adv .advertise::after {
+  content: "";
+  position: absolute;
+  width: 340px;
+  height: 50px;
+  background-color: rgba(239, 239, 239, 0);
+  bottom: 0;
+  left: 40px;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+  border-top: 1px solid #ddd;
+  margin-top: 100px;
+}
+
+footer .footTop {
+  text-align: center;
+}
+
+footer .footTop ul {
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+footer .footTop li {
+  display: inline-block;
+  margin-right: 20px;
+  color: #666;
+  font-size: 13px;
+  font-weight: 400px;
+  font-family: -apple-system, Segoe UI, SegoeUI, Microsoft YaHei,
+    Microsoft JhengHei, PingFang SC, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+}
+
+footer .footTop li:hover {
+  text-decoration: underline;
+  color: #333;
+}
+
+footer .footTop li:nth-child(13) {
+  margin: 0;
+}
+
+footer .footBottom {
+  margin-top: 20px;
+  text-align: center;
+}
+
+footer .footBottom .item {
+  display: inline-block;
+  font-size: 12px;
+  color: #999;
+}
+
+footer .footBottom .item p {
+  display: inline-block;
+  cursor: default;
+}
+
+footer .footBottom .item a {
+  font-size: 12px;
+  color: #999;
+  margin: 0 4px;
+}
+
+footer .footBottom .item a:hover {
+  text-decoration: underline;
+}
