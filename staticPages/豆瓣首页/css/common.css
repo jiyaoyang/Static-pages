@@ -1,0 +1,74 @@
+/* 共用样式 */
+.bck-f7 {
+  background-color: #f7f7f7;
+}
+
+.content {
+  width: 950px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100px;
+  height: 150px;
+}
+
+.aColor-green a {
+  color: #1f9432;
+}
+
+.aColor-green a:hover,
+.aColor-red a:hover,
+.aColor-black a:hover,
+.aColor a:hover,
+.like h3 a:hover {
+  color: #fff;
+  background-color: #37a;
+}
+
+.aColor-black a {
+  color: #555d53;
+}
+
+.aColor-red a {
+  color: #ec5303;
+  font-size: 24px;
+}
+
+.color {
+  color: #666;
+}
+
+.aColor a {
+  color: #37a;
+  font-size: 12px;
+}
+
+.like h3 a {
+  color: #333;
+  font-size: 14px;
+}
+
+h2 {
+  font: 15px Arial, Helvetica, sans-serif;
+  color: #072;
+  margin-bottom: 12px;
+}
+
+.floatL {
+  float: left;
+}
+
+.floatR {
+  float: right;
+}
+
+.db i {
+  box-shadow: 1px 1px 2px #999;
+  border-radius: 10px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url("../img/app_icons.jpg") no-repeat;
+  background-position: -250px -0px;
+}

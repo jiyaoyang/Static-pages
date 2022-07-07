@@ -1,0 +1,1452 @@
+@import url("./reset.css");
+@import url("./common.css");
+
+/* 首页通用样式开始 */
+html {
+  min-width: 1420px;
+}
+
+.new::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 17px;
+  height: 7px;
+  background: url("../img/new_menu.gif") no-repeat;
+  top: 0;
+  right: -20px;
+}
+
+.banner .content {
+  width: 1080px;
+  position: relative;
+  margin: 0 auto;
+}
+
+* {
+  font-family: Helvetica, Arial, sans-serif;
+  outline: none;
+  font-size: 12px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.fudiv::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+input::placeholder {
+  color: #ccc;
+}
+
+input:focus-visible {
+  border-radius: 0;
+}
+/* 首页通用样式结束 */
+
+/* 头部开始 */
+header {
+  width: 100%;
+}
+
+header .head {
+  background-color: #edf4ec;
+  overflow: hidden;
+}
+
+header .head a {
+  display: block;
+  width: 102px;
+  height: 0;
+  overflow: hidden;
+  padding-top: 20px;
+  background: url("../img/logo.png") no-repeat center/100% 100%;
+  margin: 7px 13px;
+}
+
+header .nav {
+  width: 1080px;
+  overflow: hidden;
+  margin: 30px auto;
+}
+
+header .nav .left {
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+
+header .nav .left h1 {
+  display: block;
+  height: 0;
+  width: 73px;
+  padding-top: 24px;
+  background: url("https://img3.doubanio.com/f/sns/714b8751a533ef592bea5cd4603dbb9e713ded61/pics/sns/sitename.png")
+    no-repeat center/100% 100%;
+  overflow: hidden;
+  margin-right: 24px;
+  float: left;
+  margin-top: 5px;
+}
+
+header .nav .left form {
+  border: 1px solid #ccc;
+  float: left;
+  width: 270px;
+}
+
+header .nav .left input {
+  width: 224px;
+  height: 30px;
+  color: #000;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 0;
+  outline: none;
+  border: 0;
+}
+
+header .nav .left button {
+  width: 20px;
+  height: 0px;
+  padding-top: 20px;
+  overflow: hidden;
+  position: absolute;
+  right: 10px;
+  top: 4.5px;
+  cursor: pointer;
+  background: url("../img/search.svg") no-repeat center/100% 100%;
+  opacity: 0.2;
+  border: none;
+}
+
+header .nav .right {
+  float: right;
+  padding-top: 5px;
+}
+
+header .nav .right ul {
+  overflow: hidden;
+}
+
+header .nav .right ul li {
+  float: left;
+}
+
+header .nav .right ul li a {
+  display: block;
+  width: 40px;
+  height: 0px;
+  padding-top: 20px;
+  background: url("../img/nav_right.png") no-repeat left top/463px 20px;
+  margin-right: 15px;
+  overflow: hidden;
+}
+
+header .nav .right ul li:nth-child(2) a {
+  background-position: -60px 0;
+}
+header .nav .right ul li:nth-child(3) a {
+  background-position: -120px 0;
+}
+header .nav .right ul li:nth-child(4) a {
+  background-position: -300px 0;
+}
+header .nav .right ul li:nth-child(5) a {
+  background-position: -180px 0;
+}
+header .nav .right ul li:nth-child(6) a {
+  background: url("../img/nav_right_read.png") no-repeat left top/40px 20px;
+}
+
+header .nav .right ul li:nth-child(7) a {
+  background-position: -240px 0;
+}
+
+header .nav .right ul li:nth-child(8) a {
+  background: url("../img/nav_right_time.png") no-repeat left top/40px 20px;
+}
+
+header .nav .right ul li:nth-child(9) a {
+  background-position: -420px 0;
+  width: 44px;
+  margin-right: 0;
+}
+/* 头部结束 */
+
+/* 中间条幅区域开始 */
+.banner {
+  height: 304px;
+  background: url(../img/banner.png) no-repeat 120px top/auto 100% #edf4ed;
+  background-position: calc(50% - 305px) top;
+  position: relative;
+}
+
+.banner .content {
+  width: 1080px;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* 豆瓣/下载豆瓣区域开始 */
+.banner .content .left {
+  float: left;
+  margin: 100px 0 0 550px;
+}
+
+.banner .content .left .title {
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+.banner .content .left .download {
+  width: 114px;
+  height: 30px;
+  background-color: #00b51d;
+  text-align: center;
+  float: left;
+  cursor: pointer;
+}
+
+.banner .content .left .download a {
+  line-height: 30px;
+  font-size: 12px;
+  color: #fff;
+}
+
+.banner .content .left .QR-code {
+  float: left;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #48aa0d;
+  box-sizing: border-box;
+  margin-left: 5px;
+  position: relative;
+}
+
+.banner .content .left .QR-code:hover .hover {
+  display: block;
+}
+
+.banner .content .left .QR-code > img {
+  width: 28px;
+  height: 28px;
+}
+
+.banner .content .left .QR-code .hover {
+  display: none;
+  position: absolute;
+  width: 200px;
+  height: 236px;
+  margin: 0;
+  top: -1px;
+  left: -1px;
+  background-color: #fff;
+  padding: 15px;
+  box-sizing: border-box;
+  color: #000;
+  z-index: 1;
+}
+
+.banner .content .left .QR-code .hover > img {
+  width: 170px;
+  height: 170px;
+  position: absolute;
+  left: 50%;
+  margin-left: -85px;
+}
+
+.banner .content .left .QR-code .hover p {
+  color: #666;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 190px;
+}
+/* 豆瓣/下载豆瓣区域结束 */
+
+/* 登录注册区域开始 */
+.banner .content .right {
+  float: right;
+  position: relative;
+  font-size: 12px;
+  color: #9b9b9b;
+  margin-top: 8px;
+}
+
+.banner .content .right a {
+  color: #41ac52;
+}
+
+.banner .content .right .way {
+  line-height: 2;
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.banner .content .right .reg {
+  width: 50%;
+  border-bottom: 1px solid #494949;
+  font-weight: 600;
+  color: #333;
+  float: left;
+  box-sizing: border-box;
+}
+
+.banner .content .right .login {
+  float: left;
+  width: 50%;
+  border-bottom: 1px solid #ececec;
+}
+
+.banner .content .right .pact {
+  margin: 10px auto;
+}
+
+.banner .content .right .userName {
+  width: 100%;
+  height: 36px;
+  border: 1px solid #e4e6e5;
+  padding-left: 52px;
+  position: relative;
+  background-color: #fff;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.banner .content .right .userName .nation {
+  width: 51px;
+  height: 36px;
+  line-height: 36px;
+  position: absolute;
+  left: 0;
+  font-size: 15px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.banner .content .right .userName input {
+  padding: 0px 8px;
+  border-left: 1px solid #e4e6e5;
+  color: #000;
+  width: 100%;
+  height: 36px;
+  box-sizing: border-box;
+}
+
+.banner .content .right form {
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.banner .content .right form input {
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 80px;
+  height: 36px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  border-left: 1px solid #e4e6e5;
+  background-color: #fff;
+}
+
+.banner .content .right form a {
+  position: absolute;
+  height: 12px;
+  right: 10px;
+  top: 18px;
+  margin-top: -6px;
+}
+
+.banner .content .right form button {
+  width: 100%;
+  height: 34px;
+  line-height: 34px;
+  font-size: 15px;
+  background-color: #41ac52;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.banner .content .right .scanLogin {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.banner .content .right .scanLogin:hover .pointer {
+  display: block;
+}
+
+.banner .content .right .pointer {
+  width: 64px;
+  height: 28px;
+  line-height: 28px;
+  color: #333;
+  text-align: center;
+  cursor: pointer;
+  background-color: #f5faf9;
+  font-size: 13px;
+  border: 1px solid rgba(66, 189, 86, 0.3);
+  border-radius: 4px;
+  position: absolute;
+  top: 0;
+  right: 40px;
+  display: none;
+}
+
+.banner .content .right > a {
+  margin: 20px 0px;
+  float: right;
+  width: 100%;
+  text-align: right;
+}
+
+.banner .content .right .other {
+  float: left;
+  width: 100%;
+  border-top: 1px solid #ddd;
+}
+
+.banner .content .right .other > p {
+  float: left;
+  margin-top: 15px;
+}
+
+.banner .content .right .other > a > img {
+  width: 22px;
+  height: 22px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+/* 中间条幅/登录注册区域结束 */
+
+/* 热点区域开始 */
+
+.hotContent {
+  margin: 20px 0;
+  font-size: 12px;
+  color: #999;
+  margin-top: 30px;
+}
+
+.hotContent .content {
+  width: 950px;
+  height: 530px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.hotContent .content h2 {
+  margin-bottom: 5px;
+}
+
+.hotContent .content .main {
+  box-sizing: border-box;
+  margin-right: 265px;
+  height: 100%;
+}
+
+.hotContent .content .right {
+  position: absolute;
+  top: 32px;
+  right: 0;
+  width: 265px;
+}
+
+.hotContent .content .main .imgs {
+  width: 350px;
+  margin-right: 30px;
+  float: left;
+}
+
+.hotContent .content .main .imgs ul {
+  overflow: hidden;
+}
+
+.hotContent .content .main .imgs ul li {
+  float: left;
+  margin: 10px 0 0 10px;
+}
+
+.hotContent .content .main .imgs ul li img {
+  width: 170px;
+  height: 170px;
+}
+
+.hotContent .content .main .imgs ul li:nth-child(1),
+.hotContent .content .main .imgs ul li:nth-child(3) {
+  margin-left: 0;
+}
+
+.hotContent .content .main .word {
+  width: 300px;
+  float: left;
+  margin-top: 10px;
+  line-height: 19.44px;
+}
+
+.hotContent .content .main .word .banner-a p {
+  margin-top: 12px;
+}
+
+.hotContent .content .right .hotTopic {
+  margin-left: 15px;
+}
+
+.hotContent .content .right .hotTopic .ad > img {
+  display: block;
+  width: 250px;
+  height: 125px;
+  margin-bottom: 10px;
+}
+
+.hotContent .content .right .hotTopic h2 {
+  margin-bottom: 5px;
+}
+
+.hotContent .content .right .hotTopic ul li {
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+
+.hotContent .content .right .hotTopic ul li a {
+  line-height: 2;
+  font-size: 14px;
+}
+
+/* 热点区域结束 */
+
+/* 豆瓣时间区域开始 */
+
+.time-hot .content {
+  box-sizing: border-box;
+  padding-top: 30px;
+  width: 950px;
+  margin: 0 auto;
+}
+
+.time-hot .content .title h2 a:nth-child(1) {
+  color: #494949;
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+.time-hot .content .title h2 > a:hover {
+  color: #fff;
+}
+
+.time-hot .content .imgs {
+  margin-left: 120px;
+  height: 100%;
+  width: 830px;
+}
+
+.time-hot .content .imgs ul li {
+  width: 100px;
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+  line-height: 1.38;
+  margin-right: 60px;
+  margin-bottom: 30px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.time-hot .content .imgs ul li .describe a {
+  color: #333;
+  font-size: 13px;
+}
+
+.time-hot .content .imgs ul li .describe a:hover {
+  color: #fff;
+}
+
+.time-hot .content .imgs ul li > img {
+  width: 100px;
+  height: 141px;
+}
+
+/* 豆瓣时间区域结束 */
+
+/* 豆瓣电影区域开始 */
+
+.movie {
+  width: 950px;
+  min-height: 530px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.movie .left {
+  width: 100px;
+  min-height: 280px;
+}
+
+.movie .left h2 a {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.movie .left ul li {
+  margin-bottom: 10px;
+}
+
+.movie .left ul li a {
+  font-size: 14px;
+  position: relative;
+}
+
+.movie .right {
+  width: 265px;
+  min-height: 574px;
+}
+
+.movie .right .sort {
+  margin-bottom: 20px;
+}
+
+.movie .right .sort li {
+  margin: 0 25px 15px 0;
+  float: left;
+}
+
+.movie .right .sort li:nth-child(5n) {
+  margin-right: 0;
+}
+
+.movie .right .recent li {
+  overflow: hidden;
+  border-bottom: 1px solid #eaeaea;
+  font-size: 12px;
+  box-sizing: border-box;
+  height: 25px;
+  line-height: 25px;
+  margin-top: 5px;
+}
+
+.movie .right .recent li a:nth-child(1) {
+  color: #111;
+  margin-right: 10px;
+}
+
+.movie .right .recent li a:nth-child(2):hover {
+  color: #ffff;
+}
+
+.movie .main {
+  min-height: 300px;
+  margin: 0 265px 0 100px;
+}
+
+.movie .main .movies {
+  overflow: hidden;
+}
+
+.movie .main .movies .film {
+  width: 132px;
+  height: 225px;
+  padding: 0 12px;
+  box-sizing: border-box;
+  text-align: center;
+  float: left;
+  font-size: 12px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.movie .main .movies .film img {
+  width: 100px;
+  height: 140px;
+  margin-bottom: 5px;
+}
+
+.movie .main .movies .film .describe em movieName {
+  color: #333;
+  font-size: 13px;
+}
+
+.movie .main .movies .film .describe em movieName:hover {
+  color: #fff;
+}
+
+.movie .main .movies .film .describe > .score {
+  margin-bottom: 2px;
+}
+
+.movie .main .movies .film .describe > a {
+  color: #fff;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  background-color: #1c8bd0;
+}
+
+.movie .main .movies .film .describe > a:hover {
+  background-color: #047fcb;
+}
+
+.movie .main .movies .film .describe .star {
+  width: 55px;
+  height: 11px;
+  margin: 5px 0 8px 15px;
+  background: url("../img/star-bg.png") no-repeat;
+  background-position: left -34px;
+  background-size: 100% auto;
+  position: relative;
+}
+
+.movie .main .movies .film .describe .star::after {
+  content: "4.5";
+  color: #e09015;
+  position: absolute;
+  right: -25px;
+  top: -5px;
+}
+
+.movie .main .movies .film .describe .star span {
+  display: none;
+}
+
+/* 豆瓣电影区域结束 */
+
+/* 小组开始 */
+
+.group .content {
+  width: 950px;
+  min-height: 300px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.group .content .left {
+  width: 100px;
+  min-height: 300px;
+}
+
+.group .content .left a {
+  color: #017a85;
+}
+
+.group .content .left a:hover {
+  color: #fff;
+}
+
+.group .content .left h2 a {
+  font-size: 24px;
+  color: #007982;
+}
+
+.group .content .left h2 a:hover {
+  color: #fff;
+}
+
+.group .content .left ul li {
+  margin: 15px 0;
+}
+
+.group .content .right {
+  width: 265px;
+  min-height: 300px;
+}
+
+.group .content .right .like h3 {
+  margin-top: 20px;
+}
+
+.group .content .right .like ul {
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.group .content .right .like ul li {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.group .content .right .like ul li a {
+  color: #017a85;
+}
+
+.group .content .right .like ul li a:hover {
+  color: #fff;
+}
+
+.group .content .main {
+  min-height: 300px;
+  margin: 0 265px 0 100px;
+}
+
+.group .content .main .imgs ul {
+  overflow: hidden;
+  margin-top: 45px;
+}
+
+.group .content .main .imgs ul li {
+  float: left;
+  margin: 0 50px 40px 0;
+  overflow: hidden;
+}
+
+.group .content .main .imgs ul li img {
+  width: 48px;
+  height: 48px;
+  float: left;
+}
+
+.group .content .main .imgs ul li .describe {
+  float: left;
+  margin-left: 15px;
+}
+
+.group .content .main .imgs ul li .describe a {
+  font-size: 13px;
+  color: #017a85;
+}
+
+.group .content .main .imgs ul li .describe a:hover {
+  color: #fff;
+}
+
+.group .content .main .imgs ul li .describe p {
+  margin-top: 12px;
+  font-size: 12px;
+  color: #999;
+}
+
+/* 小组结束 */
+
+/* 读书开始 */
+
+.read {
+  width: 950px;
+  min-height: 300px;
+  padding: 30px 0;
+  margin: 0 auto;
+}
+
+.read .left {
+  width: 100px;
+  min-height: 300px;
+}
+
+.read .left h2 a {
+  color: #4a2f14;
+  font-size: 24px;
+}
+
+.read .left h2 a:hover {
+  color: #fff;
+}
+
+.read .left ul li {
+  margin-bottom: 10px;
+}
+
+.read .left ul li a {
+  font-size: 14px;
+  color: #614e3c;
+  position: relative;
+}
+
+.read .left ul li a:hover {
+  color: #fff;
+}
+
+.read .left .db i {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url("../img/app_icons.jpg") no-repeat;
+  box-shadow: 1px 1px 2px #999;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.read .left .db p a {
+  color: #614e3c;
+}
+
+.read .left .db p a:hover {
+  color: #fff;
+}
+
+.read .right {
+  width: 265px;
+  min-height: 300px;
+}
+
+.read .right .block {
+  box-sizing: border-box;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.read .right .block:last-child {
+  border-bottom: none;
+}
+
+.read .right .block ul {
+  float: left;
+  padding: 10px 0;
+}
+
+.read .right .block ul li {
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 5px;
+}
+
+.read .right .block ul li p {
+  font-size: 12px;
+  color: #999;
+}
+
+.read .right .block ul li a {
+  font-size: 12px;
+  color: #614e3c;
+}
+
+.read .right .block ul li a:hover {
+  color: #fff;
+}
+
+.read .main {
+  min-height: 300px;
+  margin: 0 265px 0 100px;
+  font-size: 12px;
+}
+
+.read .main .books .book {
+  overflow: hidden;
+  display: inline-block;
+  height: 230px;
+  padding-left: 30px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.read .main .books .book .describe {
+  text-align: center;
+}
+
+.read .main .books .book .describe em a {
+  display: block;
+  color: #614e3c;
+  width: 100px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 10px 0;
+}
+
+.read .main .books .book .describe em a:hover {
+  color: #fff;
+}
+
+.read .main .books .book .describe p {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.read .main .books .book .describe > a {
+  color: #fff;
+  padding: 5px 10px;
+  background-color: #999a95;
+}
+
+.read .main .books .book .describe > a:hover {
+  background-color: #878882;
+}
+
+/* 读书结束 */
+
+/* 时间开始 */
+
+.music {
+  min-height: 300px;
+  padding: 30px 0;
+  margin: 0 auto;
+}
+
+.music .content {
+  width: 950px;
+  min-height: 300px;
+  margin: 0 auto;
+}
+
+.music .content .left {
+  width: 100px;
+  min-height: 300px;
+}
+
+.music .content .left h2 a {
+  color: #f38c00;
+  font-size: 24px;
+}
+
+.music .content .left h2 a:hover {
+  color: #fff;
+}
+
+.music .content .left ul {
+  margin-top: 20px;
+}
+
+.music .content .left ul li {
+  margin-bottom: 15px;
+}
+
+.music .content .left ul li a {
+  color: #555d53;
+  font-size: 14px;
+}
+
+.music .content .left .db {
+  margin-top: 30px;
+}
+
+.music .content .left .db a {
+  margin-top: 10px;
+  display: inline-block;
+  color: #555d53;
+}
+
+.music .content .left .db a:hover {
+  color: #fff;
+}
+
+.music .content .left .db:last-child i {
+  background-position: -50px 0;
+}
+
+.music .content .right {
+  width: 265px;
+  min-height: 300px;
+}
+
+.music .content .right ul li {
+  overflow: hidden;
+  line-height: 1.5;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.music .content .right ul li div {
+  margin-right: 5px;
+}
+
+.music .content .right ul li .img {
+  position: relative;
+}
+
+.music .content .right ul li .img img {
+  width: 48px;
+  height: 48px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.music .content .right ul li .img:hover::before,
+.music .content .right ul li .img:hover::after {
+  display: block;
+}
+
+.music .content .right ul li .img::before {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-color: rgba(1, 1, 1, 0.7);
+  position: absolute;
+  z-index: 1;
+  display: none;
+}
+
+.music .content .right ul li .img::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("../img/toLeft.png") no-repeat center/100% 100%;
+  transform: rotate(180deg);
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  margin: -13px 0 0 -11px;
+  position: absolute;
+  display: none;
+}
+
+.music .content .right ul li .describe {
+  color: #999;
+}
+
+.music .content .right ul li .describe a {
+  color: #555d53;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.music .content .right ul li .describe a:hover {
+  color: #fff;
+}
+
+.music .content .main {
+  min-height: 300px;
+  margin: 0 265px 0 100px;
+}
+
+.music .content .main .musics {
+  overflow: hidden;
+  padding-left: 30px;
+  line-height: 1.5;
+}
+
+.music .content .main .musics .music-list {
+  width: 75px;
+  text-align: center;
+  position: relative;
+  float: left;
+  margin: 0 60px 10px 0;
+}
+
+.music .content .main .musics .music-list img {
+  width: 80px;
+  height: 80px;
+  display: block;
+}
+
+.music .content .main .musics .music-list p {
+  display: inline-block;
+  font-size: 12px;
+  color: #666;
+}
+
+.music .content .main .musics .music-list a {
+  color: #555d53;
+}
+
+.music .content .main .musics .music-list a:hover {
+  color: #fff;
+}
+
+.music .content .main .musics .music-list .score {
+  display: block;
+  width: 55px;
+  height: 11px;
+  background: url(../img/star-bg.png) no-repeat left top/100%;
+  margin: 10px -2px;
+}
+
+.music .content .main .musics .music-list .score::after {
+  content: "8.9";
+  color: #e09015;
+  font-size: 12px;
+  position: absolute;
+  right: 1px;
+  bottom: 5px;
+}
+
+.main > .hotMusic > .music-list {
+  text-align: center;
+  float: left;
+  margin-left: 17px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.main > .hotMusic > .music-list ::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url("../img/start.png") no-repeat center/100% 100%;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  margin-left: -20px;
+}
+
+.main > .hotMusic > .music-list > img {
+  width: 80px;
+  height: 80px;
+}
+
+.main > .hotMusic > .music-list > em {
+  font-size: 13px;
+  color: #111;
+  display: block;
+  margin-top: 10px;
+}
+
+/* 时间结束 */
+
+/* 豆品区域开始 */
+
+.doupin {
+  padding: 30px 0;
+}
+
+.doupin .content {
+  min-height: 300px;
+}
+
+.doupin .content .left {
+  width: 100px;
+  min-height: 300px;
+}
+
+.doupin .content .left h2 a {
+  font-size: 24px;
+}
+
+.doupin .content .right {
+  width: 265px;
+  min-height: 300px;
+}
+
+.doupin .content .right .collect {
+  line-height: 1.5;
+}
+
+.doupin .content .right .collect img {
+  width: 265px;
+  height: 95px;
+}
+
+.doupin .content .right .mtp {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.doupin .content .right .group-lest {
+  margin-bottom: 20px;
+}
+
+.doupin .content .right .group-lest > a {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.doupin .content .right .group-lest .bottom {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #6a6a6a;
+}
+
+.doupin .content .main {
+  min-height: 300px;
+  margin: 0 265px 0 100px;
+}
+
+.doupin .content .main ul li {
+  float: left;
+  position: relative;
+  margin: 0 20px 30px 0;
+}
+
+.doupin .content .main ul li img {
+  width: 240px;
+  height: 220px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.doupin .content .main li .img::before {
+  content: "";
+  display: block;
+  width: 240px;
+  height: 220px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.doupin .content .main ul li .img:hover::before {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.doupin .content .main ul li .describe a {
+  font-size: 16px;
+}
+
+.doupin .content .main ul li .describe p {
+  color: #e55457;
+  font-size: 16px;
+}
+
+/* 豆品区域结束 */
+
+/* 同城开始 */
+
+.tongcheng .content {
+  min-height: 300px;
+  padding: 30px 0;
+}
+
+.tongcheng .content .left {
+  width: 100px;
+  min-height: 300px;
+}
+
+.tongcheng .content .left p {
+  margin: 15px 0;
+}
+
+.tongcheng .content .right {
+  width: 265px;
+  min-height: 300px;
+}
+
+.tongcheng .content .right ul li {
+  float: left;
+  margin-right: 10px;
+  line-height: 1.45;
+  font-size: 12px;
+}
+
+.tongcheng .content .right ul li:nth-child(1) {
+  float: none;
+  margin: 20px 0 5px 0;
+  font-size: 14px;
+}
+
+.tongcheng .content .main {
+  min-height: 300px;
+  margin: 0 265px 0 100px;
+}
+
+.tongcheng .content .main ul li {
+  width: 248px;
+  height: 100px;
+  font-size: 12px;
+  line-height: 2;
+  float: left;
+  margin: 10px 30px 25px 0;
+}
+
+.tongcheng .content .main ul li .img {
+  float: left;
+}
+
+.tongcheng .content .main ul li .img img {
+  width: 70px;
+  height: 90px;
+  display: block;
+  margin: 0 10px 10px 0;
+}
+
+.tongcheng .content .main ul li .describe a {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.tongcheng .content .main ul li .describe p {
+  width: 148px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #666;
+}
+
+/* 同城结束 */
+
+/* 页脚开始 */
+
+.footer {
+  padding: 20px 0;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.footer .content {
+  border-top: 1px dashed #dcdcdc;
+  padding: 20px 0;
+}
+
+.footer .content .left ul {
+  width: 500px;
+  font-size: 12px;
+  line-height: 2;
+}
+
+.footer .content .left ul li {
+  float: left;
+  margin-right: 5px;
+  color: #999;
+}
+
+.footer .content .left ul li:nth-child(13),
+.footer .content .left ul li:nth-child(15) {
+  margin-right: 200px;
+}
+
+.footer .content .left ul li:nth-child(16),
+.footer .content .left ul li:nth-child(18) {
+  padding-left: 15px;
+  position: relative;
+}
+
+.footer .content .left ul li:nth-child(16)::before,
+.footer .content .left ul li:nth-child(18)::before {
+  content: "";
+  width: 15px;
+  height: 12px;
+  display: block;
+  background: url("../img/icon-jubao.png") no-repeat center/100% 100%;
+  position: absolute;
+  left: 0;
+  height: 50%;
+  margin-top: 6px;
+}
+
+.footer .content .left ul li:nth-child(18)::before {
+  width: 15px;
+  height: 17px;
+  background-image: url("../img/icon-jinggong.gif");
+  margin-top: 3px;
+}
+
+.footer .content .left ul li img {
+  width: 118px;
+  height: 16px;
+  position: relative;
+  bottom: -3px;
+}
+
+.footer .content .right a {
+  font-size: 12px;
+  display: list-item;
+  float: left;
+  margin-right: 15px;
+}
+
+.footer .content .right a::marker {
+  color: #999;
+  font-size: 8px;
+}
+
+.footer .content .right a:first-child {
+  list-style: none;
+}
+
+.footer .content .right a:last-child {
+  margin: 0;
+}
+
+/* 页脚结束 */
